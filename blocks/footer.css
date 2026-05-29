@@ -1,0 +1,19 @@
+.footer {
+  font-family: "Inter", serif;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 24px;
+  padding-top: 92px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-top: 88px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .footer {
+    padding-top: 64px;
+  }
+}

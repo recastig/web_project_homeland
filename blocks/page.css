@@ -1,0 +1,28 @@
+.page {
+  background-color: #2a2c2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page__logo {
+  display: block;
+  width: 254px;
+  height: auto;
+  padding-top: 34px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page__logo {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .page__logo {
+    width: 188px;
+    height: auto;
+    padding-top: 20px;
+  }
+}
