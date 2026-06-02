@@ -1,0 +1,15 @@
+.places {
+  padding-top: 92px;
+  max-width: 984px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    padding-top: 88px;
+    max-width: 720px;
+  }
+}

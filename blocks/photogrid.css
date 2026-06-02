@@ -1,0 +1,26 @@
+.photogrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  max-width: 1184px;
+  gap: 16px 16px;
+  margin: 0 auto;
+  padding-top: 118px;
+}
+
+@media (max-width: 1024px) {
+  .photogrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 64px;
+  }
+  .photogrid__image {
+    width: 100%;
+    max-width: 352px;
+    height: auto;
+    object-fit: cover;
+  }
+}
