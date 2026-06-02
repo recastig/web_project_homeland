@@ -13,3 +13,10 @@
     max-width: 720px;
   }
 }
+
+@media screen and (max-width: 544px) {
+  .places {
+    padding-top: 62px;
+    max-width: 320px;
+  }
+}

@@ -42,6 +42,11 @@
   align-self: start;
 }
 
+.place__button:hover {
+  background: #003a7b;
+
+}
+
 .place__artist {
   grid-area: artist;
   align-self: end;
@@ -74,7 +79,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .place {
+  .place {
     column-gap: 28px;
     padding-bottom: 72px;
     grid-template-rows: auto 340px auto;
@@ -87,6 +92,40 @@
   .place__image {
     max-width: 340px;
   }
+  .place__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .place {
+    row-gap: 30px;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 320px auto auto;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__image {
+    max-width: 320px;
+  }
+
+  .place__button {
+    font-size: 14px;
+    width: 288px;
+    margin: 0 auto;
+  }
+
   .place__paragraph {
     font-size: 16px;
   }
